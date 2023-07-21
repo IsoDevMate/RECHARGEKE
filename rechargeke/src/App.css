@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  .input-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  
+  input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Animation for shaking button on successful payment */
+  @keyframes shake {
+    10%, 90% {
+      transform: translateX(-5px);
+    }
+  
+    20%, 80% {
+      transform: translateX(5px);
+    }
+  
+    30%, 50%, 70% {
+      transform: translateX(-10px);
+    }
+  
+    40%, 60% {
+      transform: translateX(10px);
+    }
+  }
+  
+  .shake-animation {
+    animation: shake 0.4s cubic-bezier(.36,.07,.19,.97) both;
+  }
+  
